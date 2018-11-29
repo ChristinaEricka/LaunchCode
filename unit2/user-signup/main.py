@@ -32,6 +32,7 @@ def signup():
         # check for empty username
         if username_length == 0:
             username_error = "Username is required"
+            user_error = "Email cannot contain spaces"
         # check username length (should be between 3 and 20)
         elif username_length < 3 or username_length > 20:
             username_error = "Username must be between 3 and 20 characters long"
